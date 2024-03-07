@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabela la </title>
+</head>
+<body>
+    <form>
+        <div>
+            <center>
+        Faixa 01:
+            <select id="faixa01">
+                <option class="black" value="0"> Preta </option>
+                <option class="browm" value="1"> Marrom </option>
+                <option class="red" value="2"> Vermelho </option>
+                <option class="orange" value="3"> Laranja </option>
+                <option class="yellow" value="4"> Amarelo </option>
+                <option class="green" value="5"> Verde </option>
+                <option class="blue" value="6"> Azul </option>
+                <option class="violet" value="7"> Violeta </option>
+                <option class="gray" value="8"> Cinza </option>
+                <option class="white" value="9"> Branco </option>
+                
+            </select>
+        Faixa 02:
+            <select id="faixa02">
+                <option class="black" value="0"> Preta </option>
+                <option class="browm" value="1"> Marrom </option>
+                <option class="red" value="2"> Vermelho </option>
+                <option class="orange" value="3"> Laranja </option>
+                <option class="yellow" value="4"> Amarelo </option>
+                <option class="green" value="5"> Verde </option>
+                <option class="blue" value="6"> Azul </option>
+                <option class="violet" value="7"> Violeta </option>
+                <option class="gray" value="8"> Cinza </option>
+                <option class="white" value="9"> Branco </option>
+            </select>
+       
+        Multiplicador:
+            <select id="multi">
+                <option class="black" value="1"> Preta </option>
+                <option class="browm" value="10"> Marrom </option>
+                <option class="red" value="100"> Vermelho </option>
+                <option class="orange" value="1000"> Laranja </option>
+                <option class="yellow" value="10000"> Amarelo </option>
+                <option class="green" value="100000"> Verde </option>
+                <option class="blue" value="1000000"> Azul </option>
+                <option class="violet" value="10000000"> Violeta </option>
+                <option class="gray" value="100000000"> Cinza </option>
+                <option class="white" value="1000000000"> Branco </option>
+                <option class="douredo" value="0.1"> Dourado </option>
+                <option class="silver" value="0.01"> Prata </option>
+                
+            </select>
+        
+         Tolerancia:
+            <select id="toler">
+                <option class="browm" value="0.01"> Marrom </option>
+                <option class="red" value="0.02"> Vermelho </option>
+                <option class="green" value="0.005"> Verde </option>
+                <option class="blue" value="0.0025"> Azul </option>
+                <option class="violet" value="0.001"> Violeta</option>
+                <option class="gray" value="0.0005"> Cinza </option>
+                <option class="douredo" value="0.5"> Dourado </option>
+                <option class="silver" value="0.1"> Prata </option>
+                <option class="sc" value="0.2"> Sem Cor </option>
+                
+            </select>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+        <center>
+        <button type="button" onclick="fazerCalculo()">Calcular</button>
+        <br>
+        <br>
+        <br>
+       <p> Resultado: <input type="text" id="resultado" readonly> </p>
+       <p> Podendo variar entre: <input type="text" id="toleran" readonly> </p>
+       <p> Aumentando ou Diminuindo em: <input type="text" id="toln" readonly> </p>
+    </center>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+    body {
+font-size: larger;
+    background-color: rgb(114, 129, 143);
+}
+
+.black{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.browm{
+    background-color: brown;
+    color: whitesmoke;
+}
+
+.red{
+    background-color: red;
+    color: whitesmoke;
+}
+
+.orange{
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.violet{
+    background-color: violet;
+    color: whitesmoke;
+}
+
+.gray{
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.white{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.yellow{
+    background-color: yellow;
+    color: whitesmoke;
+}
+
+.blue{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.green{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.douredo{
+    background-color: gold;
+    color: whitesmoke;
+}
+.silver{
+    background-color: silver;
+    color: whitesmoke;
+}
+.sc{
+    background-color: navajowhite;
+    color: whitesmoke;
+}
+
+</style>
